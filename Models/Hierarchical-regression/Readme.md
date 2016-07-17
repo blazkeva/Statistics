@@ -1,7 +1,7 @@
-HIERARCHICAL REGRESSION
+HIERARCHICKÁ REGRESE
 ===
 
-## Models
+## Modely
 
  - [hierarchical-regression.R](./hierarchical-regression.R)
  - [hierarchical-regression.stan](./hierarchical-regression.stan)
@@ -55,7 +55,7 @@ MCMC diagnostika:
  - [plot_reg__density-caterpillar.pdf](../../Outputs/Hierarchical-regression/plot_reg__density-caterpillar.pdf)
  - [bplot_reg__rhat-geweke.pdf](../../Outputs/Hierarchical-regression/plot_reg__rhat-geweke.pdf)
  - [plot_reg__traceplot-running-compare-partial.pdf](../../Outputs/Hierarchical-regression/plot_reg__traceplot-running-compare-partial.pdf)
- -
+
 ### Výsledky
 
 Hodnoty parametrů:
