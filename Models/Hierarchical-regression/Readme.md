@@ -1,27 +1,29 @@
-GLM
+HIERARCHICAL REGRESSION
 ===
 
-## Multiple Object Tracking
+## Models
 
- - [mot.R](./mot.R)
- - [mot.stan](./mot.stan)
+ - [hierarchical-regression.R](./hierarchical-regression.R)
+ - [hierarchical-regression.stan](./hierarchical-regression.stan)
 
 
 ### Data
 
-Náhodně vygenerovaná data. Počet lidí: 200. Počet pokusů: 10.
-Směrodatná odchylka prediktorů: 100.
-Průměr: 50.
-Průměr interceptu: 20.
-Směrodatná odchylka: 10.
-Průměr koeficientu: 5.
-Směrodatná odchylka: 5.
-Směrodatná odchylka náhodné chyby: 10
-Intercepty a i b jsou náhodné proměnné.
+- Náhodně vygenerovaná data
+- Počet lidí: 200
+- Počet pokusů: 10
+- Směrodatná odchylka prediktorů: 100
+- Průměr: 50
+- Průměr interceptu: 20
+- Směrodatná odchylka: 10
+- Průměr koeficientu: 5
+- Směrodatná odchylka: 5
+- Směrodatná odchylka náhodné chyby: 10
+- Intercepty a i b jsou náhodné proměnné
 
 ### Model
 
-Parameters:
+Parametery:
  - subject-specific intercept (a)
  - predictor (x)
  - subject specific coefficient (b)
@@ -30,7 +32,7 @@ Parameters:
 y ~ student_t(nu, a + b * x, sigma)
 ```
 
-Priors:
+Priory:
 - aMu ~ normal(0, 10000);
 - aSigma ~ gamma(aShape, aRate);
 - a ~ normal(aMu, aSigma);
@@ -42,21 +44,21 @@ Priors:
 - sigma ~ gamma(shape, rate);
 - nu ~ exponential(0.0333);
 
-MCMC settings:
+MCMC nastavení:
  - Chains: 4
  - Burnin: 500
  - Iterations total: 2500
  - Thinning: 1
 
-MCMC diagnostics:
+MCMC diagnostika:
  - [plot_reg__autocorrelation-crosscorrelation.pdf](../../Outputs/Hierarchical-regression/plot_reg__autocorrelation-crosscorrelation.pdf)
  - [plot_reg__density-caterpillar.pdf](../../Outputs/Hierarchical-regression/plot_reg__density-caterpillar.pdf)
  - [bplot_reg__rhat-geweke.pdf](../../Outputs/Hierarchical-regression/plot_reg__rhat-geweke.pdf)
  - [plot_reg__traceplot-running-compare-partial.pdf](../../Outputs/Hierarchical-regression/plot_reg__traceplot-running-compare-partial.pdf)
- - 
-### Results
+ -
+### Výsledky
 
-Parameter values:
+Hodnoty parametrů:
 
 |` parameter                    `|` mean   `|` 95 % hdi        `|
 |--------------------------------|---------:|------------------:|
