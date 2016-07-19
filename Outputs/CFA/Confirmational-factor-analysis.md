@@ -112,5 +112,5 @@ Náboje faktorů
 EFA: rotace varimax
      p < ,000
 
-##### Zhodnocení modelu
+#####Zhodnocení modelu
 Na dotazníku by bylo potřeba dále ještě pracovat. Hodnota CFI je nízká a RMSEA naopak poměrně vysoká. Obzvláště některé položky druhého faktory mají nízký náboj a to samé by bylo možné říct také o dvou položkách
