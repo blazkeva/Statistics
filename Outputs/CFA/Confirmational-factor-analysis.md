@@ -47,12 +47,14 @@ Výstupy analýzy byly následující:
 - Grafické znázornění modelu bylo bohužel vzhledem k velkému počtu položek velmi obtížně čitelné.
 
 Model
+
 |`                `|`      χ2     `|`    df    `|`   CFI   `|`  RMSEA  `|
 |------------------|--------------:|-----------:|----------:|----------:|
 |`Default model   `|` 8583,397*** `|`   942    `|`  ,777   `|`  ,064   `|
 *** p < ,001
 
 Korelace mezi faktory
+
 |`            `|`  Estimate  `|
 |--------------|--------------|
 |`F1 <--> F2  `|`   ,054     `|
@@ -60,6 +62,7 @@ Korelace mezi faktory
 |`F3 <--> F2  `|`   ,347     `|
 
 Náboje faktorů
+
 |`        `|` EFA    `|`  EFA   `|` EFA    `|` CFA    `|`  CFA   `|` CFA    `|
 |----------|----------|----------|----------|----------|----------|----------|
 |`Položka `|`Faktor 1`|`Faktor 2`|`Faktor 3`|`Faktor 1`|`Faktor 2`|`Faktor 3`|
@@ -112,5 +115,5 @@ Náboje faktorů
 EFA: rotace varimax
      p < ,000
 
-#####Zhodnocení modelu
+### Zhodnocení modelu
 Na dotazníku by bylo potřeba dále ještě pracovat. Hodnota CFI je nízká a RMSEA naopak poměrně vysoká. Obzvláště některé položky druhého faktory mají nízký náboj a to samé by bylo možné říct také o dvou položkách
